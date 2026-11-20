@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: portfolio-postgres
+    environment:
+      POSTGRES_USER: estudo
+      POSTGRES_PASSWORD: estudo
+      POSTGRES_DB: indicadores
+    ports:
+      - "5432:5432"
+    volumes:
+      - dados_pg:/var/lib/postgresql/data
+
+volumes:
+  dados_pg:

@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: indicadores_mensais
+    description: Uma linha por mês com IPCA, Selic, IPCA 12 meses e juro real do mês
+    columns:
+      - name: mes
+        data_tests: [unique, not_null]

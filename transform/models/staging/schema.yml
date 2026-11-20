@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_indicadores
+    columns:
+      - name: mes
+        data_tests: [not_null]
+      - name: valor
+        data_tests: [not_null]
+      - name: serie
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['ipca', 'selic']

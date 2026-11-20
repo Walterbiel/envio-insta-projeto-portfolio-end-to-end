@@ -1,0 +1,12 @@
+indicadores:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: estudo
+      password: estudo
+      dbname: indicadores
+      schema: public
+      threads: 2

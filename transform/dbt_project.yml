@@ -1,0 +1,14 @@
+name: indicadores
+version: "1.0.0"
+profile: indicadores
+
+model-paths: ["models"]
+
+models:
+  indicadores:
+    staging:
+      +materialized: view
+      +schema: staging
+    marts:
+      +materialized: table
+      +schema: marts
